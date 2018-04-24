@@ -9,9 +9,9 @@ class Intro extends Component {
           <div className="site-header">
             <Typing speed={80}>
               <span>
-                Hey there <Typing.Delay ms={1500} /> I'm Guru Bagawan{" "}
-                <Typing.Delay ms={1500} /> and I'm a Web Developer <br /> and an
-                aspiring Game of Thrones character.
+                <h2>
+                  Hey there <Typing.Delay ms={1000} /> I'm Guru.
+                </h2>
               </span>
             </Typing>
           </div>
