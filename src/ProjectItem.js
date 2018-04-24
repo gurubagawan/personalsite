@@ -8,10 +8,7 @@ class ProjectItem extends Component {
   render() {
     return (
       <div>
-        <FlexyFlipCard
-          frontBackgroundColor="#B96aC9"
-          backBackgroundColor="#231b1b"
-        >
+        <FlexyFlipCard>
           <div ref="flipper">test</div>
           <div ref="flipper">more test</div>
         </FlexyFlipCard>

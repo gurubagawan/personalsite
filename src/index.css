@@ -3,3 +3,17 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.head-image {
+  background: url("img/header.jpg") no-repeat;
+  background-size: cover;
+  height: 800px;
+  position: relative;
+  background-position: center;
+}
+
+.site-header {
+  color: white;
+  margin-left: 25%;
+  padding-top: 35%;
+}
