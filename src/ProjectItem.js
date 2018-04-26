@@ -5,7 +5,7 @@ import { FlexyFlipCard } from "flexy-flipcards";
 //import Flipcard from "@kennethormandy/react-flipcard";
 
 const ProjectItem = props => {
-  return (
+  return props.right ? (
     <div
       className={`container project-item ${
         props.background ? "project-background" : ""
@@ -13,7 +13,12 @@ const ProjectItem = props => {
     >
       <div className="row">
         <div className="col-md-6">
-          <img src={props.image} alt={props.title} />
+          <img
+            className="pull-left"
+            src={props.image}
+            alt={props.title}
+            width="80%"
+          />
         </div>
         <div className="col-md-6">
           <h3>{props.title} </h3>
@@ -21,6 +26,8 @@ const ProjectItem = props => {
             {props.description}
             <br />
           </p>
+          <h4> Learning Points </h4>
+          <p className="project-description">{props.challenges} </p>
           {props.website && (
             <a href={props.website} target="_blank">
               View Online
@@ -29,11 +36,46 @@ const ProjectItem = props => {
         </div>
       </div>
     </div>
+  ) : (
+    <div
+      className={`container project-item ${
+        props.background ? "project-background" : ""
+      }`}
+    >
+      <div className="row">
+        <div className="col-md-6">
+          <h3>{props.title} </h3>
+          <p className="project-description">
+            {props.description}
+            <br />
+          </p>
+          <h4> Learning Points </h4>
+          <p className="project-description">{props.challenges} </p>
+          {props.website && (
+            <a href={props.website} target="_blank">
+              View Online
+            </a>
+          )}
+        </div>
+        <div className="col-md-6">
+          <img
+            className="pull-right"
+            src={props.image}
+            alt={props.title}
+            width="80%"
+          />
+        </div>
+      </div>
+    </div>
   );
 };
 
 ProjectItem.propTypes = {
-  type: PropTypes.string
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  website: PropTypes.string,
+  challenges: PropTypes.string,
+  right: PropTypes.bool
 };
 
 export default ProjectItem;
