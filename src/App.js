@@ -14,7 +14,12 @@ class App extends Component {
         <header />
         <Intro />
         <AboutMe />
-        <ProjectItem />
+        <ProjectItem
+          title="Test"
+          description="test"
+          image="./img/profile.jpg"
+          website="https://inbox.google.com/"
+        />
       </div>
     );
   }
