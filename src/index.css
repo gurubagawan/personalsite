@@ -1,8 +1,14 @@
+html {
+	height: 100%;
+}
+
 body {
 	margin: 0;
 	padding: 0;
 	font-family: sans-serif;
-	color: #333333;
+	color: #ffffff !important;
+	background-color: #081727;
+	height: 100%;
 }
 
 .head-image {
@@ -55,8 +61,20 @@ body {
 
 .project-item {
 	margin-top: 1%;
+	border-style: solid;
+	border-radius: 5px;
 }
 
 .image {
-	margin-top: 60px;
+	margin-top: 15px;
+	border-radius: 5px;
+}
+
+.p {
+	height: 100%;
+}
+
+.project-description {
+	background-color: #edeff2;
+	color: black;
 }

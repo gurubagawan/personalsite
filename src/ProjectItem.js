@@ -5,31 +5,31 @@ import { FlexyFlipCard } from "flexy-flipcards";
 //import Flipcard from "@kennethormandy/react-flipcard";
 
 const ProjectItem = props => {
-	return props.right ? (
+	return props.project.right ? (
 		<div
 			className={`container project-item ${
-				props.background ? "project-background" : ""
+				props.project.background ? "project-background" : ""
 			}`}
 		>
-			<div className="row">
+			<div className="row" style={{ display: "flex" }}>
 				<div className="col-md-6">
 					<img
-						className="pull-left image"
-						src={props.image}
-						alt={props.title}
+						className="image center-block"
+						src={props.project.image}
+						alt={props.project.title}
 						width="80%"
 					/>
 				</div>
-				<div className="col-md-6">
-					<h3>{props.title} </h3>
+				<div className="col-md-6 project-description">
+					<h3>{props.project.title} </h3>
 					<p className="project-description">
-						{props.description}
+						{props.project.description}
 						<br />
 					</p>
 					<h4> Learning Points </h4>
-					<p className="project-description">{props.challenges} </p>
-					{props.website && (
-						<a href={props.website} target="_blank">
+					<p>{props.project.challenges} </p>
+					{props.project.website && (
+						<a href={props.project.website} target="_blank">
 							View Online
 						</a>
 					)}
@@ -42,10 +42,10 @@ const ProjectItem = props => {
 				props.project.background ? "project-background" : ""
 			}`}
 		>
-			<div className="row">
-				<div className="col-md-6">
+			<div className="row" style={{ display: "flex" }}>
+				<div className="col-md-6 project-description">
 					<h3>{props.project.title} </h3>
-					<p className="project-description">
+					<p>
 						{props.project.description}
 						<br />
 					</p>
@@ -59,7 +59,7 @@ const ProjectItem = props => {
 				</div>
 				<div className="col-md-6">
 					<img
-						className="pull-right image"
+						className="image center-block align-middle"
 						src={props.project.image}
 						alt={props.project.title}
 						width="80%"
