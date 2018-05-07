@@ -98,8 +98,17 @@ body {
 	color: black;
 }
 
+.nav-bar {
+	height: 5%;
+}
+
+.items {
+	height: 95%;
+	margin: auto;
+}
+
 .row {
-	height: 40%;
+	height: 45%;
 	margin-bottom: 20px;
 }
 
@@ -107,7 +116,7 @@ body {
 	height: 100%;
 }
 
-.two-squares {
+.main-page {
 	margin: auto;
 	height: 100% !important;
 	width: 50%;
@@ -116,7 +125,7 @@ body {
 
 .blue-square {
 	background-color: #18121e;
-	margin
+	margin-right: 20px;
 }
 
 .gunmetal-square {
@@ -129,4 +138,5 @@ body {
 
 .yellow-square {
 	background-color: #eac67a;
+	margin-right: 20px;
 }

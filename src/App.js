@@ -19,7 +19,7 @@ const renderProjects = projectArray.map((thisproject, i) => {
 class App extends Component {
 	render() {
 		return (
-			<div className="test">
+			<div className="test ">
 				<header />
 				<Intro />
 				<MainPage />
