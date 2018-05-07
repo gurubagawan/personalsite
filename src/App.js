@@ -7,6 +7,7 @@ import { projectArray } from "./projects";
 
 import AboutMe from "./About";
 import Intro from "./Intro";
+import MainPage from "./main2";
 
 const mastermindpic = require("./img/mastermind.png");
 const drrobotpic = require("./img/DrRobot.png");
@@ -18,11 +19,10 @@ const renderProjects = projectArray.map((thisproject, i) => {
 class App extends Component {
 	render() {
 		return (
-			<div>
+			<div className="test">
 				<header />
 				<Intro />
-				<AboutMe />
-				{renderProjects}
+				<MainPage />
 			</div>
 		);
 	}
