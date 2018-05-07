@@ -98,12 +98,40 @@ body {
 	color: black;
 }
 
+.nav-text {
+	font-weight: bold;
+	font-size: 40px;
+	vertical-align: middle;
+	font-family: "Roboto", sans-serif;
+	float: left;
+}
+
+.square-icon {
+	margin-top: 10% !important;
+	height: 80%;
+	display: block;
+	margin: auto;
+	vertical-align: middle;
+}
+
+.icon {
+	height: 60%;
+	margin-left: 20px;
+}
+
+.nav-icons {
+	display: inline;
+	margin-top: 10px;
+	float: right;
+	height: 80%;
+}
+
 .nav-bar {
-	height: 5%;
+	height: 10%;
 }
 
 .items {
-	height: 95%;
+	height: 90%;
 	margin: auto;
 }
 

@@ -10,7 +10,8 @@ class Intro extends Component {
 						<Typing speed={80}>
 							<span>
 								<h2>
-									Hey there <Typing.Delay ms={1000} /> I'm Guru.
+									<Typing.Delay ms={1000} /> Hey there{" "}
+									<Typing.Delay ms={1000} /> I'm Guru.
 								</h2>
 							</span>
 						</Typing>
