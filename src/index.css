@@ -20,6 +20,11 @@ body {
 	height: 100%;
 }
 
+@font-face {
+	font-family: Ventography;
+	src: url(Ventography.ttf);
+}
+
 .head-image {
 	background: url("img/header.jpg") no-repeat;
 	background-size: cover;
@@ -167,4 +172,48 @@ body {
 .yellow-square {
 	background-color: #eac67a;
 	margin-right: 20px;
+}
+
+.overlay {
+	height: 100%;
+	width: 100%;
+}
+
+.showmeonhover {
+	font-family: "Bitter", serif;
+	font-size: 45px;
+	font-weight: bold;
+	display: none;
+	position: absolute;
+	margin: auto;
+	margin-top: 30%;
+	margin-left: 15%;
+	text-align: center;
+	color: #1c1c38;
+}
+.alwaysshowme:hover .showmeonhover {
+	display: inline;
+	opacity: 1 !important;
+}
+
+.alwaysshowme:hover .lighten {
+	display: inline;
+}
+
+.lighten {
+	margin-left: -5%;
+	height: 100%;
+	width: 110%;
+	background-color: white;
+	opacity: 0.75;
+	display: none;
+	position: absolute;
+}
+
+.experience {
+	margin-left: 5% !important;
+}
+
+.about {
+	margin-left: 22% !important;
 }

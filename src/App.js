@@ -12,10 +12,6 @@ import MainPage from "./main2";
 const mastermindpic = require("./img/mastermind.png");
 const drrobotpic = require("./img/DrRobot.png");
 
-const renderProjects = projectArray.map((thisproject, i) => {
-	return <ProjectItem project={thisproject} />;
-});
-
 class App extends Component {
 	render() {
 		return (
