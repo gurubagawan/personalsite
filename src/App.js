@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
+import { BrowserRouter } from "react-router-dom";
+import { Router, Route, IndexRoute } from "react-router";
 import "./App.css";
 import ProjectItem from "./ProjectItem";
 import PropTypes from "prop-types";
@@ -15,11 +17,12 @@ const drrobotpic = require("./img/DrRobot.png");
 class App extends Component {
 	render() {
 		return (
-			<div className="test ">
-				<header />
-				<Intro />
-				<MainPage />
-			</div>
+			<BrowserRouter>
+				<div className="test ">
+					<Route path="/main" component={MainPage} />
+					<Route path="/about" component={AboutMe} />
+				</div>
+			</BrowserRouter>
 		);
 	}
 }
