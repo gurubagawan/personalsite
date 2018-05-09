@@ -57,12 +57,6 @@ body {
 	text-shadow: #000 0px 0px 3px;
 }
 
-.site-header h2 {
-	font-size: 60px;
-	font-weight: 500;
-	font-family: "Karla", sans-serif;
-}
-
 .me-text p {
 	font-weight: 500;
 	font-size: 16px;
@@ -75,12 +69,6 @@ body {
 
 .about-me {
 	margin-top: 2%;
-}
-
-.project-item {
-	margin-top: 1%;
-	border-style: solid;
-	border-radius: 5px;
 }
 
 .image {
@@ -96,11 +84,6 @@ body {
 	height: 100%;
 	width: 48%;
 	margin: auto;
-}
-
-.project-description {
-	background-color: #edeff2;
-	color: black;
 }
 
 .nav-text {
@@ -193,7 +176,6 @@ body {
 }
 .alwaysshowme:hover .showmeonhover {
 	display: inline;
-	opacity: 1 !important;
 }
 
 .alwaysshowme:hover .lighten {
@@ -216,4 +198,66 @@ body {
 
 .about {
 	margin-left: 19% !important;
+}
+
+.projects-header {
+	font-family: "Roboto", sans-serif;
+	font-size: 30px;
+	text-align: center;
+	color: #18121e;
+	display: inline-block;
+	margin-left: 10%;
+	vertical-align: middle;
+	width: 70%;
+}
+
+.project-container {
+	font-weight: bold;
+	margin-bottom: 3%;
+	width: 50%;
+	margin-left: 25%;
+}
+
+.project-item {
+	margin-top: 1%;
+	margin-bottom: 4% !important;
+	width: 50%;
+	margin: auto;
+	color: #18121e;
+}
+
+.project-description {
+	color: #18121e;
+}
+
+.back-icon {
+	width: 5%;
+	display: inline-block;
+}
+
+.project-icon {
+	margin-top: 20px;
+	margin-left: 10px;
+	display: inline;
+	height: 30px;
+	vertical-align: middle;
+	float: right;
+}
+
+.showmeonhover {
+	display: none;
+	position: absolute;
+	color: #1c1c38;
+}
+.alwaysshowme:hover .showmeonhover {
+	display: inline;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 5px solid #984b43;
+	margin-top: 1px;
+	padding: 0;
 }

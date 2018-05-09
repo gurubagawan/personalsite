@@ -1,6 +1,7 @@
 export const projectArray = [
 	{
 		title: "Dr Robot",
+		github: "https://github.com/gurubagawan/BrainStation-Final-Project-",
 		description:
 			"I used API Medic to create an app that as able to diagnose the user based on the experiences they submitted as they went through the app.",
 		image: require("./img/DrRobot.png"),
@@ -9,6 +10,7 @@ export const projectArray = [
 	},
 	{
 		title: "Mastermind",
+		github: "https://github.com/gurubagawan/mastermindgame",
 		description:
 			"A skill based game in which the user must guess a random sequence of colors based on limited feedback. Try it out, it's pretty hard!",
 		image: require("./img/mastermind.png"),
@@ -19,6 +21,7 @@ export const projectArray = [
 	},
 	{
 		title: "Contacts App",
+		github: "https://github.com/gurubagawan/Contacts-app",
 		description:
 			"A contact up built with Material UI, that stores contacts by user on a Database. There is a populated user under guru@email.com/password",
 		image: require("./img/contacts.PNG"),
