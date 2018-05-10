@@ -9,16 +9,16 @@ const MainPage = () => {
 				<div className="nav-text">GURU BAGAWAN</div>
 				<div className="nav-icons">
 					<a target="_blank" href="https://github.com/gurubagawan">
-						<img className="icon" src="./icons/github.png" />
+						<i class="fab fa-github hover-icons nav-icon nav-github" />
 					</a>
 					<a
 						target="_blank"
 						href="https://www.linkedin.com/in/guru-bagawan-23504326/"
 					>
-						<img className="icon" src="./icons/linkedin.png" />
+						<i class="fab fa-linkedin hover-icons nav-icon nav-linkedin" />
 					</a>
 					<a href="mailto:guru.bagawan@gmail.com">
-						<img className="icon" src="./icons/email.png" />
+						<i class="fas fa-envelope hover-icons nav-icon nav-email" />
 					</a>
 				</div>
 			</div>
@@ -28,7 +28,11 @@ const MainPage = () => {
 						<Link to="/projects">
 							<div className="lighten" />
 							<h3>
-								<span className="showmeonhover">PROJECTS</span>
+								<span className="showmeonhover">
+									<hr className="hr-main" />
+									PROJECTS
+									<hr className="hr-main" />
+								</span>
 							</h3>
 							<img className="square-icon" src="./icons/projectsvg.svg" />
 						</Link>
@@ -37,7 +41,11 @@ const MainPage = () => {
 						<a href="https://medium.com/@guru.bagawan">
 							<div className="lighten" />
 							<h3>
-								<span className="showmeonhover">WRITING</span>
+								<span className="showmeonhover">
+									<hr className="hr-main" />
+									WRITING
+									<hr className="hr-main" />
+								</span>
 							</h3>
 							<img className="square-icon" src="./icons/pen.svg" />
 						</a>
@@ -48,7 +56,11 @@ const MainPage = () => {
 						<Link to="/profile">
 							<div className="lighten" />
 							<h3>
-								<span className="showmeonhover about">PROFILE</span>
+								<span className="showmeonhover about">
+									<hr className="hr-main" />
+									PROFILE
+									<hr className="hr-main" />
+								</span>
 							</h3>
 							<img className="square-icon" src="./icons/avatar.svg" />
 						</Link>
@@ -57,7 +69,11 @@ const MainPage = () => {
 						<Link to="/resume">
 							<div className="lighten" />
 							<h3>
-								<span className="showmeonhover experience">EXPERIENCE</span>
+								<span className="showmeonhover experience">
+									<hr className="hr-main" />
+									EXPERIENCE
+									<hr className="hr-main" />
+								</span>
 							</h3>
 							<img className="square-icon" src="./icons/resume.svg" />
 						</Link>;

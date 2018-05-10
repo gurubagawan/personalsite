@@ -8,6 +8,8 @@
 
 # production
 /build
+/public/profile.jpg
+/public/resume.pdf
 
 # misc
 .DS_Store

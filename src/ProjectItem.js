@@ -13,14 +13,14 @@ const ProjectItem = props => {
 					{props.project.title}
 				</h3>
 				<a href={props.project.github}>
-					<img className="project-icon" src="./icons/github.png" />
+					<i class="fab fa-github hover-icons material-icons project-icon" />
 				</a>
 				{props.project.website && (
 					<a href={props.project.website}>
-						<img className="project-icon" src="./icons/desktop.svg" />
+						<i class="hover-icons material-icons project-icon">computer</i>
 					</a>
 				)}
-				<hr />
+				<hr className="hr-project" />
 			</div>
 			<div>
 				<p className="project-description">
@@ -29,6 +29,15 @@ const ProjectItem = props => {
 				</p>
 				<h4> Learning Points </h4>
 				<p>{props.project.challenges} </p>
+				<div className="frameworks">
+					<h4> Framworks Used </h4>
+					<b>
+						{" "}
+						{props.project.frameworks.map((framework, i) => {
+							return framework + ", ";
+						})}
+					</b>
+				</div>
 			</div>
 		</div>
 	);

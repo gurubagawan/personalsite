@@ -24,7 +24,7 @@ class App extends Component {
 					<Link to="/projects"> projects </Link>
 					<Route path="/projects" component={Portfolio} />
 					<Route path="/main" component={MainPage} />
-					<Route path="/about" component={AboutMe} />
+					<Route path="/profile" component={AboutMe} />
 				</div>
 			</BrowserRouter>
 		);

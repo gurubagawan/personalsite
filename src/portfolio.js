@@ -14,8 +14,7 @@ const Portfolio = () => {
 		<div>
 			<div className="project-container ">
 				<a className="alwaysshowme" href="/main">
-					<img className="back-icon" src="./icons/back.svg" />
-					<img className="back-icon showmeonhover" src="./icons/redback.svg" />
+					<i className="material-icons hover-icons back-icon">arrow_back</i>
 				</a>
 				<div className="projects-header"> Here's how I keep myself busy!</div>
 			</div>

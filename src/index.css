@@ -11,8 +11,6 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: sans-serif;
-	color: #ffffff !important;
-	/*background-color: #081727;*/
 	height: 100%;
 }
 
@@ -35,14 +33,6 @@ body {
 	background-repeat: no-repeat;
 }
 
-.profile-image {
-	background: url("img/profile.jpg") no-repeat;
-	background-size: cover;
-	width: 350px;
-	max-width: 100%;
-	height: 304px;
-}
-
 .test {
 	height: 100%;
 }
@@ -57,18 +47,48 @@ body {
 	text-shadow: #000 0px 0px 3px;
 }
 
+.profile-photo {
+	height: 150px;
+	width: 150px;
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+.about-body {
+	margin-top: 3%;
+}
+
+.profile-header {
+	font-family: "Roboto", sans-serif;
+	font-size: 30px;
+	text-align: center;
+	color: #18121e;
+	display: inline-block;
+	margin-left: 10%;
+	vertical-align: middle;
+	width: 70%;
+	font-weight: bold;
+}
+
+.me-text {
+	display: inline-block;
+}
+
 .me-text p {
 	font-weight: 500;
 	font-size: 16px;
+	color: #18121e;
 }
 
 .me-text h3 {
-	font-size: 36px;
+	font-size: 25px;
 	font-weight: bold;
 }
 
 .about-me {
 	margin-top: 2%;
+	width: 50%;
+	margin-left: 25%;
 }
 
 .image {
@@ -137,6 +157,7 @@ body {
 	height: 100% !important;
 	width: 50%;
 	color: black;
+	overflow: hidden;
 }
 
 .blue-square {
@@ -166,30 +187,34 @@ body {
 	font-family: "Bitter", serif;
 	font-size: 45px;
 	font-weight: bold;
-	display: none;
+	opacity: 0;
 	position: absolute;
+	display: inline;
 	margin: auto;
-	margin-top: 30%;
+	margin-top: 25%;
 	margin-left: 15%;
 	text-align: center;
 	color: #1c1c38;
+	transition-delay: 0.15s;
 }
 .alwaysshowme:hover .showmeonhover {
-	display: inline;
+	opacity: 1;
 }
 
 .alwaysshowme:hover .lighten {
-	display: inline;
+	margin-top: 0%;
 }
 
 .lighten {
+	margin-top: 100%;
 	margin-left: -5%;
 	height: 100%;
 	width: 110%;
 	background-color: white;
+	display: inline;
 	opacity: 0.75;
-	display: none;
 	position: absolute;
+	transition: 0.3s ease-out;
 }
 
 .experience {
@@ -226,38 +251,92 @@ body {
 	color: #18121e;
 }
 
+.project-title {
+	font-weight: 550;
+	font-size: 25px;
+}
+
 .project-description {
 	color: #18121e;
 }
 
+.framwork-icon {
+	height: 40px;
+}
+
 .back-icon {
-	width: 5%;
+	font-size: 50px;
 	display: inline-block;
+	vertical-align: bottom;
 }
 
 .project-icon {
 	margin-top: 20px;
 	margin-left: 10px;
 	display: inline;
-	height: 30px;
+	font-size: 30px;
 	vertical-align: middle;
 	float: right;
 }
 
-.showmeonhover {
+.dontshowme {
 	display: none;
-	position: absolute;
-	color: #1c1c38;
 }
-.alwaysshowme:hover .showmeonhover {
+
+.nav-github {
+	font-size: 32.5px;
+}
+
+.nav-linkedin {
+	font-size: 35px;
+}
+
+.nav-email {
+	font-size: 40px;
+}
+
+.nav-icon {
+	margin-left: 10px;
+	vertical-align: middle;
+}
+
+.alwaysshowme:hover .dontshowme {
 	display: inline;
 }
 
-hr {
+.hover-icons {
+	color: #233237;
+}
+.hover-icons:hover {
+	color: #984b43;
+}
+
+.hover-live-icon {
+	display: none;
+	margin-right: -40px;
+}
+
+.hover-github-icon {
+	display: none;
+	margin-right: -40px;
+	font-size: 25px;
+}
+
+hr.hr-project {
 	display: block;
 	height: 1px;
 	border: 0;
 	border-top: 5px solid #984b43;
+	margin-top: 1px;
+	padding: 0;
+}
+
+hr.hr-main {
+	display: block;
+	height: 1px;
+	border: 0;
+	margin-bottom: -0.05%;
+	border-top: 3px solid #984b43;
 	margin-top: 1px;
 	padding: 0;
 }
