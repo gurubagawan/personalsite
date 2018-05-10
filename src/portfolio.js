@@ -13,7 +13,7 @@ const Portfolio = () => {
 	return (
 		<div>
 			<div className="project-container ">
-				<a className="alwaysshowme" href="/main">
+				<a className="alwaysshowme" href="/">
 					<i className="material-icons hover-icons back-icon">arrow_back</i>
 				</a>
 				<div className="projects-header"> Here's how I keep myself busy!</div>

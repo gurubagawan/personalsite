@@ -19,12 +19,10 @@ class App extends Component {
 	render() {
 		return (
 			<BrowserRouter>
-				<div className="test ">
-					<Link to="/main"> main </Link>
-					<Link to="/projects"> projects </Link>
+				<div className="test">
 					<Route path="/projects" component={Portfolio} />
-					<Route path="/main" component={MainPage} />
 					<Route path="/profile" component={AboutMe} />
+					<Route exact path="/" component={MainPage} />
 				</div>
 			</BrowserRouter>
 		);

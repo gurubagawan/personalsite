@@ -3,7 +3,7 @@ import React from "react";
 const AboutMe = () => {
 	return (
 		<div className="about-me">
-			<a className="alwaysshowme" href="/main">
+			<a className="alwaysshowme" href="/">
 				<i className="material-icons hover-icons back-icon">arrow_back</i>
 			</a>
 			<div className="profile-header"> A little bit about me</div>
@@ -28,21 +28,16 @@ const AboutMe = () => {
 						taking the eagles to Mordor. Unless you say jif... then we may not
 						get along (kidding...sort of).
 					</p>
-					<h3> Skills </h3>
-					<div>
-						<h4 style={{ display: "inline-block" }}> ReactJS</h4>{" "}
-						<i class="material-icons">star</i>{" "}
-						<i class="material-icons">star</i>
-						<i class="material-icons">star</i>
-						<i class="material-icons">star</i> <br />
-						<h4 style={{ display: "inline-block" }}> ExpressJS</h4>{" "}
-						<i class="material-icons">star</i>{" "}
-						<i class="material-icons">star</i>
-						<i class="material-icons">star</i> <br />
-						<h4 style={{ display: "inline-block" }}> HTML & CSS </h4>{" "}
-						<i class="material-icons">star</i>{" "}
-						<i class="material-icons">star</i>
-						<i class="material-icons">star</i>
+					<div className="about-icons">
+						<a
+							target="_blank"
+							href="https://www.linkedin.com/in/guru-bagawan-23504326/"
+						>
+							<i class="fab fa-linkedin hover-icons nav-icon nav-linkedin" />
+						</a>
+						<a href="mailto:guru.bagawan@gmail.com">
+							<i class="fas fa-envelope hover-icons nav-icon nav-email" />
+						</a>
 					</div>
 				</div>
 			</div>

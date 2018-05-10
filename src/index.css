@@ -218,7 +218,7 @@ body {
 }
 
 .experience {
-	margin-left: 5% !important;
+	margin-left: 18% !important;
 }
 
 .about {
@@ -339,4 +339,9 @@ hr.hr-main {
 	border-top: 3px solid #984b43;
 	margin-top: 1px;
 	padding: 0;
+}
+
+.about-icons {
+	margin-top: 60px;
+	margin-left: 40%;
 }

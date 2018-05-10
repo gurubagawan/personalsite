@@ -71,7 +71,7 @@ const MainPage = () => {
 							<h3>
 								<span className="showmeonhover experience">
 									<hr className="hr-main" />
-									EXPERIENCE
+									RESUME
 									<hr className="hr-main" />
 								</span>
 							</h3>
